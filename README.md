@@ -19,19 +19,19 @@
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
-To get Local Copy
+To get Local Copy<br>
 Run: `git clone https://github.com/heintayzar-hm/leaderboard-api.git`
 <br>
-To get dependencies
+To get dependencies <br>
 Run: `npm install`
 <br>
 
-To run in browser
+To run in browser<br>
 Run : `npm run dev`
 ### Prerequisites
 
 ### Setup
-
+You can create an .env file and add Following Data
 ### Install
 
 ### Usage
@@ -44,17 +44,12 @@ Run : `npm run dev`
 
 ## Authors
 
-👤 **Author1**
+<a href="https://github.com/heintayzar-hm/">Github</a>
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+<a href="https://twitter.com/heintayzarhm">Twitter</a>
 
-👤 **Author2**
+<a href="https://www.linkedin.com/in/hein-tay-zar/">LinkedIn</a>
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
