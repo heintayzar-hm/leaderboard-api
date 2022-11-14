@@ -32,6 +32,7 @@ Run : `npm run dev`
 
 ### Setup
 You can create an .env file and add Following Data
+You can create an .env file and add Following Data
 ### Install
 
 ### Usage
