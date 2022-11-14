@@ -1,4 +1,6 @@
-
+body {
+    font-family: 'Rufscript', sans-serif;
+}
 
 ul {
     list-style: none;
@@ -93,6 +95,13 @@ main #scores .score-table {
 main #scores .score-table li {
     background-color: white;
     padding: 10px;
+
+}
+
+main #scores .score-table li .score {
+    font-size: 20px;
+    font-family: 'Sanju Vony', sans-serif;
+                                                
 }
 
 main #scores .score-table li:nth-child(odd) {
