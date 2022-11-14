@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Leaderboard Project with api
 
-> Description the project.
+> Leaderboard Project with api
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Html
+- Css
+- Javascript
 
 ## Live Demo (if available)
 
@@ -17,13 +17,17 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
+To get Local Copy
+Run: `git clone https://github.com/heintayzar-hm/leaderboard-api.git`
+<br>
+To get dependencies
+Run: `npm install`
+<br>
+
+To run in browser
+Run : `npm run dev`
 ### Prerequisites
 
 ### Setup
