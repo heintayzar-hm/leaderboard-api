@@ -13,8 +13,8 @@ export default class Game extends API {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       await this.addApi({
-        user: encodeHTMLEntities(e.target.children[0].value),
-        score: encodeHTMLEntities(e.target.children[1].value),
+        user: e.target.children[0].value,
+        score: e.target.children[1].value,
       })
         .then((res) => {
           if (res === this.addSuccess) {

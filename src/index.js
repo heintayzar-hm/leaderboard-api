@@ -1,4 +1,13 @@
 import './styles.css';
-import { createGames } from './modules/api/api.js';
+import Game from './modules/api/GameClass.js';
 
-createGames();
+const game = new Game();
+game.add();
+game.display();
+
+const refresh = document.querySelector('.refresh');
+
+refresh.addEventListener('click', (e) => {
+  game.display();
+  e.preventDefault();
+});

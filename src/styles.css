@@ -133,6 +133,18 @@ main #add-score #add-score-form input {
   width: 80%;
 }
 
+main #add-score .msg {
+  text-align: center;
+}  
+
+.fail {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
 @media only screen and (max-width: 500px) {
   main {
     display: grid;
