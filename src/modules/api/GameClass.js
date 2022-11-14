@@ -1,5 +1,5 @@
 import { API } from './api.js';
-import { encodeHTMLEntities } from './util.js';
+import { encodeHTMLEntities, onlySpaces } from './util.js';
 
 export default class Game extends API {
   constructor() {
@@ -12,20 +12,24 @@ export default class Game extends API {
     const form = document.getElementById('add-score-form');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      await this.addApi({
-        user: e.target.children[0].value,
-        score: e.target.children[1].value,
-      })
-        .then((res) => {
-          if (res === this.addSuccess) {
-            e.target.reset();
-            this.display();
-            this.msg('Successfully Added', true);
-          }
-        }).catch((error) => {
-          this.msg('Successfully Failed', false);
-          throw new Error(error);
-        });
+      if (onlySpaces(e.target.children[0].value) || onlySpaces(e.target.children[1].value)) {
+        this.msg('Successfully falied no full of spaces', false);
+      } else {
+        await this.addApi({
+          user: e.target.children[0].value,
+          score: e.target.children[1].value,
+        })
+          .then((res) => {
+            if (res === this.addSuccess) {
+              e.target.reset();
+              this.display();
+              this.msg('Successfully Added', true);
+            }
+          }).catch((error) => {
+            this.msg('Successfully Failed', false);
+            throw new Error(error);
+          });
+      }
     });
   }
 
