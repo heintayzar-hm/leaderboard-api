@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://heintayzar-hm.github.io/leaderboard-api/dist/)
 
 
 ## Getting Started
@@ -35,19 +35,17 @@ Run : `npm run dev`
 
 ### Setup
 You can create an .env file and add Following Data
-You can create an .env file and add Following Data
-### Install
-
 ### Usage
 
 ### Run tests
 
 ### Deployment
-
+[Live Demo Link](https://heintayzar-hm.github.io/leaderboard-api/dist/)
 
 
 ## Authors
-
+<h2>Hein Tay Zar</h2>
+<br>
 <a href="https://github.com/heintayzar-hm/">Github</a>
 
 <a href="https://twitter.com/heintayzarhm">Twitter</a>
@@ -67,9 +65,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Thank you Microverse
 
 ## 📝 License
 
