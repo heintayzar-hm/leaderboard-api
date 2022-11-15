@@ -25,7 +25,10 @@ Run: `git clone https://github.com/heintayzar-hm/leaderboard-api.git`
 To get dependencies <br>
 Run: `npm install`
 <br>
+For api calls, <br>
+Make a `.env` file in the root directory and fill data
 
+** important ** Only after making `.env` file make the following changes 
 To run in browser<br>
 Run : `npm run dev`
 ### Prerequisites
