@@ -14,7 +14,7 @@ const createGames = async () => {
 
 class API {
   constructor() {
-    this.id = process.env.GAME_ID || 'Fi3Q2n4OQ0gz7RAgiitk';
+    this.id = process.env.GAME_ID || '3rRxeZ2zHc2U0l3ZypH9';
     this.url = baseUrl;
   }
 
