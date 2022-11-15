@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: 'development',
@@ -8,6 +9,7 @@ module.exports = {
     static: './dist',
   },
   plugins: [
+    new Dotenv(),
     new HtmlWebpackPlugin({
       title: 'Output Management',
       template: './src/index.html',

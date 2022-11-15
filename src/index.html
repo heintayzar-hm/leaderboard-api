@@ -14,26 +14,17 @@
         <section id ="scores">
             <div class="scores-header">
                 <h2>Recent scores</h2>
-                <button><span>Refresh</span></button>
+                <button class="refresh"><span>Refresh</span></button>
             </div>
             <ul class="score-table">
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
-                <li>Name: <span class="score">1000</span></li>
             </ul>
         </section>
         <section id="add-score">
 <h2>Add your score</h2>
 <form id="add-score-form">
-    <input placeholder="Your name" type="text">
-    <input placeholder="Your score" type="text">
+    <input required placeholder="Your score" type="text">
+    <input required placeholder="Your name" type="text">
+    <span class="msg"></span>
     <button type="submit"><span>Submit</span></button>
 </form>
         </section>
