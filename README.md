@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://heintayzar-hm.github.io/leaderboard-api/dist/)
 
 
 ## Getting Started
@@ -34,7 +34,6 @@ Run : `npm run dev`
 ### Prerequisites
 
 ### Setup
-You can create an .env file and add Following Data
 You can create an .env file and add Following Data
 ### Install
 
