@@ -1,5 +1,7 @@
 import { API } from './api.js';
-import { encodeHTMLEntities, onlySpaces } from './util.js';
+import {
+  disableBtn, enableBtn, encodeHTMLEntities, onlySpaces,
+} from './util.js';
 
 export default class Game extends API {
   constructor() {
@@ -12,8 +14,10 @@ export default class Game extends API {
     const form = document.getElementById('add-score-form');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
+      disableBtn(e.target.children[3]);
       if (onlySpaces(e.target.children[0].value) || onlySpaces(e.target.children[1].value)) {
         this.msg('Successfully falied no full of spaces', false);
+        enableBtn(e.target.children[3]);
       } else {
         await this.addApi({
           user: e.target.children[0].value,
@@ -24,9 +28,11 @@ export default class Game extends API {
               e.target.reset();
               this.display();
               this.msg('Successfully Added', true);
+              enableBtn(e.target.children[3]);
             }
           }).catch((error) => {
             this.msg('Successfully Failed', false);
+            enableBtn(e.target.children[3]);
             throw new Error(error);
           });
       }
@@ -40,11 +46,18 @@ export default class Game extends API {
 
   display = async () => {
     const scoreTable = document.querySelector('.score-table');
+    const refresh = document.querySelector('.refresh');
+    disableBtn(refresh);
     await this.refresh().then((res) => {
       scoreTable.innerHTML = '';
       res.forEach((score) => {
         scoreTable.innerHTML += this.score(score);
       });
+      enableBtn(refresh);
+    }).catch((error) => {
+      this.msg('Loading Failed', false);
+      enableBtn(refresh);
+      throw new Error(error);
     });
   }
 

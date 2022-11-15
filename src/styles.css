@@ -4,6 +4,28 @@ body {
   font-size: 18px;
 }
 
+.disabled {
+  transform: none;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  transform: none;
+  cursor: not-allowed;
+}
+.disabled * {
+  background-color: dimgrey;
+  color: linen;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.disabled *:hover {
+  background-color: dimgrey;
+  color: linen;
+
+}
+
 ul {
   list-style: none;
 }
