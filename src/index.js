@@ -1,5 +1,5 @@
 import './styles.css';
-import Game from './modules/api/GameClass.js';
+import Game from './modules/GameClass.js';
 
 const game = new Game();
 game.add();
