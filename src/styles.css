@@ -13,6 +13,7 @@ body {
   transform: none;
   cursor: not-allowed;
 }
+
 .disabled * {
   background-color: dimgrey;
   color: linen;
@@ -23,7 +24,6 @@ body {
 .disabled *:hover {
   background-color: dimgrey;
   color: linen;
-
 }
 
 ul {
