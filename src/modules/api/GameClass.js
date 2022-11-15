@@ -40,8 +40,8 @@ export default class Game extends API {
 
   display = async () => {
     const scoreTable = document.querySelector('.score-table');
-    scoreTable.innerHTML = '';
     await this.refresh().then((res) => {
+      scoreTable.innerHTML = '';
       res.forEach((score) => {
         scoreTable.innerHTML += this.score(score);
       });
