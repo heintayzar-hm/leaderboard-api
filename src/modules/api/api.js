@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = process.env.BASE_API_URL;
+const baseUrl = process.env.BASE_API_URL || 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 const createGames = async () => {
   try {
     const res = await axios.post(`${baseUrl}games/`, {
@@ -14,8 +14,8 @@ const createGames = async () => {
 
 class API {
   constructor() {
-    this.id = process.env.GAME_ID || '';
-    this.url = baseUrl || '';
+    this.id = process.env.GAME_ID || 'Fi3Q2n4OQ0gz7RAgiitk';
+    this.url = baseUrl;
   }
 
   addApi = async ({ user, score }) => {

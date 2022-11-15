@@ -14,4 +14,4 @@ refresh.addEventListener('click', (e) => {
 
 // for the changing secret Only in development
 // import { createGames } from './modules/api/api.js';
-// console.log(createGames().then((res) => console.log(res)));
+// createGames().then((res) => console.log(res));
